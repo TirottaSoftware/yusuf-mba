@@ -4,6 +4,7 @@
     --color-primary: #282A39;
     --color-secondary: #333647;
     --color-accent: #E2B91B;
+    --color-accent-opacity: rgba(226, 186, 27, 0.250);
 
     --color-twiiter: #04B0FE;
     --color-whatsapp: #4CB050;
@@ -42,7 +43,7 @@ nav{
     background: transparent;
     text-transform: uppercase;
     font-size: 16px;
-    padding: 2% 10%;
+    padding: 3% 15%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -52,9 +53,13 @@ nav{
     left: 0;
     color: white;
 }
+nav:hover{
+    transition: .5s ease-in-out;
+    background: var(--color-primary);
+}
 nav ul{
     display: flex;
-    width: 35%;
+    width: 50%;
     justify-content: space-between;
 }
 nav ul li{
@@ -62,4 +67,42 @@ nav ul li{
 }
 nav li:hover{
     color: var(--color-accent);
+}
+
+/* Hero Section */
+.hero{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 15% 0 15%;
+}
+.hero-text{
+    padding: 5% 0;
+    color: white;
+    width: 50%;
+}
+.hero-text h1{
+    font-size: 60px;
+}
+.hero-text p{
+    width: 80%;
+    margin: 3% 0 10% 0; 
+    font-size: 24px;
+}
+.cta{
+    color: var(--color-accent);
+    border: none;
+    background: var(--color-accent-opacity);
+    padding: 2.5% 10%;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.hero-img{
+    background: grey;
+    width: 35%;
+    height: 80%;
+    border: 15px solid var(--color-accent);
 }
