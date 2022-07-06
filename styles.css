@@ -6,7 +6,7 @@
     --color-accent: #E2B91B;
     --color-accent-opacity: rgba(226, 186, 27, 0.250);
 
-    --color-twiiter: #04B0FE;
+    --color-twitter: #03A9F4;
     --color-whatsapp: #4CB050;
 }
 *{
@@ -256,4 +256,68 @@ section{
     position: absolute;
     top: -100%;
     left: 0;
+}
+
+/* Twitter Section */
+
+.twitter-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.twitter-copy{
+    display: flex;
+    padding-left: 20%;
+    width: 40%;
+    flex-flow: column;
+}
+.twitter-copy h2{
+    margin-bottom: 5%;
+    align-self: flex-start;
+    font-size: 32px;
+}
+.twitter-copy p{
+    align-self: flex-start;
+    width: 80%;
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+.tweet-embed{
+    margin-right: 15%;
+}
+.tweet-embed img{
+    border-radius: 15px;
+}
+.twitter-follow{
+    width: 80%;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 10%;
+    padding: 3% 5%;
+    background: var(--color-twitter);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.twitter-follow label{
+    cursor: pointer;
+}
+.twitter-follow img{
+    width: 50px;
+    height: 50px;
+    margin-right: 15%;
+}
+.twitter-contents{
+    align-self: flex-start;
+    width: 100%;
+}
+.tweet-category{
+    display: flex;
+    align-items: center;
+}
+.tweet-category img{
+    width: 40px;
+    height: 35px;
+    margin: 2% 2.5%;
 }
