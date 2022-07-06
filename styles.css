@@ -7,7 +7,7 @@
     --color-accent-opacity: rgba(226, 186, 27, 0.250);
 
     --color-twitter: #03A9F4;
-    --color-whatsapp: #4CB050;
+    --color-whatsapp: #1BD741
 }
 *{
     margin: 0;
@@ -325,4 +325,73 @@ section{
     width: 40px;
     height: 35px;
     margin: 2% 2.5%;
+}
+
+/* Contact Section */
+
+#contact{
+    padding-bottom: 0;
+}
+.contact-container{
+    background: rgba(0,0,0,0.1);
+    width: 100%;
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60%;
+}
+.contact-method{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 25%;
+    height: 100%;
+}
+
+#method-email{
+    align-self: flex-start;
+    text-align: start;
+}
+#method-twitter{
+    align-self: center;
+    text-align: center;
+}
+#method-whatsapp{
+    align-self: flex-end;
+    text-align: end;
+}
+
+.btn-email{
+    background: white;
+}
+.btn-email label{
+    color: black;
+}
+.btn-twitter{
+    background: var(--color-twitter);
+}
+.btn-whatsapp{
+    background: var(--color-whatsapp);
+}
+
+.contact-method p{
+    font-size: 20px;
+}
+.contact-method a{
+    display: flex;
+    align-items: center;
+    margin: 10% 0;
+    width: 80%;
+    padding: 3% 10%;
+    border-radius: 10px;
+}
+.contact-method img{
+    width: 40;
+    height: 40;
+    margin-right: 20%;
+}
+.contact-method label{
+    text-transform: uppercase;
+    cursor: pointer;
 }
