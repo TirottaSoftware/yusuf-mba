@@ -15,14 +15,16 @@
     box-sizing: border-box;
     font-family: var(--font-primary);
     -webkit-appearance: none;
+    color: white;
     -moz-appearance: none;
 }
 html{
     scroll-behavior: smooth;
 }
-/* body{
+body{
     overflow-x: hidden;
-} */
+    background: var(--color-primary);
+}
 a{
     text-decoration: none;
     color: var(--font-primary);
@@ -51,7 +53,6 @@ nav{
     position: absolute;
     top: 0;
     left: 0;
-    color: white;
 }
 nav:hover{
     transition: .5s ease-in-out;
@@ -80,7 +81,6 @@ nav li:hover{
 }
 .hero-text{
     padding: 5% 0;
-    color: white;
     width: 50%;
 }
 .hero-text h1{
@@ -105,4 +105,40 @@ nav li:hover{
     width: 35%;
     height: 80%;
     border: 15px solid var(--color-accent);
+}
+
+/* About Section */
+
+.about-container{
+    height: 100%;
+    width: 100%;
+    padding: 10% 15%;
+    display: flex;
+    justify-content: center;
+}
+.about-img{
+    background: grey;
+    width: 35%;
+    border-radius: 25px;
+    margin-right: 2.5%;
+    height: 100%;
+    -webkit-box-shadow: -15px 15px 0px 0px var(--color-accent); 
+    box-shadow: -15px 15px 0px 0px var(--color-accent); 
+}
+.about-text{
+    width: 45%;
+    margin-left: 2.5%;
+}
+.about-text p{
+    font-size: 22px;
+    margin: 3% 0;
+}
+.section-title{
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+.section-span{
+    color: var(--color-accent);
 }
