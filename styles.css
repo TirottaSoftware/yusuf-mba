@@ -1,0 +1,65 @@
+:root{
+    --font-primary: 'Montserrat', sans-serif;
+
+    --color-primary: #282A39;
+    --color-secondary: #333647;
+    --color-accent: #E2B91B;
+
+    --color-twiiter: #04B0FE;
+    --color-whatsapp: #4CB050;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* body{
+    overflow-x: hidden;
+} */
+a{
+    text-decoration: none;
+    color: var(--font-primary);
+    outline: none;
+}
+ul, li{
+    list-style: none;
+}
+input, textarea{
+    outline: none;
+}
+textarea{
+    resize: none;
+}
+
+/* Navigation Bar */
+nav{
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 2% 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+}
+nav ul{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+nav ul li{
+    margin-left: 5%;
+}
+nav li:hover{
+    color: var(--color-accent);
+}
