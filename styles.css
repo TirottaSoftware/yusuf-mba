@@ -262,14 +262,16 @@ section{
 
 .twitter-container{
     width: 100%;
+    height: 80%;
     display: flex;
+    background: rgba(0, 0, 0, 0.1);
     justify-content: space-between;
     align-items: center;
 }
 .twitter-copy{
     display: flex;
-    padding-left: 20%;
-    width: 40%;
+    padding-left: 15%;
+    width: 50%;
     flex-flow: column;
 }
 .twitter-copy h2{
@@ -284,17 +286,20 @@ section{
     font-size: 20px;
 }
 .tweet-embed{
-    margin-right: 15%;
+    width: 50%;
+    height: 100%;
 }
 .tweet-embed img{
-    border-radius: 15px;
+    height: 100%;
+    width: auto;
 }
 .twitter-follow{
-    width: 80%;
+    width: 40%;
     border-radius: 15px;
     text-align: center;
-    margin-top: 10%;
-    padding: 3% 5%;
+    margin-top:  5%;
+    padding: 1% 3%;
+    font-size: 16px;
     background: var(--color-twitter);
     text-transform: uppercase;
     display: flex;
@@ -306,7 +311,7 @@ section{
 .twitter-follow img{
     width: 50px;
     height: 50px;
-    margin-right: 15%;
+    margin-right: 10%;
 }
 .twitter-contents{
     align-self: flex-start;
