@@ -464,6 +464,12 @@ section{
         width: 30%;
     }
 
+    .testimonials-container{
+        padding: 0 5%;
+    }
+    .card-review{
+        padding: 0;
+    }
     .card-review img{
         display: none;
     }
@@ -476,6 +482,9 @@ section{
     }
     .client-img{
         margin-top: 5%;
+    }
+    .client-info{
+        text-align: center;
     }
 
     .twitter-container{
