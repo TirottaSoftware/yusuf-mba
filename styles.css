@@ -420,10 +420,15 @@ section{
         font-size: 0.8rem;
         padding: 5% 0;
     }
+    section{
+        padding: 50% 0;
+    }
     
     .hero{
         flex-flow: column-reverse;
         margin-top: 10%;
+        padding-top: 25%;
+        height: unset;
     }
     .hero-img{
         width: 80%;
