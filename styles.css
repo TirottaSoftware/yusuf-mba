@@ -44,7 +44,7 @@ textarea{
 nav{
     background: var(--color-secondary);
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 3% 15%;
     width: 100%;
     display: flex;
@@ -200,8 +200,8 @@ section{
 }
 .card-review img{
     width: 100px;
-    margin-right: 2.5%; 
     height: 100px;
+    margin-right: 2.5%; 
 }
 .card-review p{
     font-size: 1.25rem;
@@ -398,4 +398,120 @@ section{
     text-transform: uppercase;
     cursor: pointer;
     white-space: nowrap;
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 670px) {
+    nav{
+        font-size: 0.8rem;
+        padding: 5% 0;
+    }
+    
+    .hero{
+        flex-flow: column-reverse;
+    }
+    .hero-img{
+        width: 60%;
+        height: 100%;
+        margin: 10% auto;
+    }
+    .hero-text{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    .hero-text p{
+        width: 100%;
+        margin: 10% 0;
+    }
+
+    .about-container{
+        height: 100%;
+        flex-flow: column;
+    }
+    .about-text{
+        width: 100%;
+    } 
+    .about-img{
+        width: 80%;
+        margin: 10% auto;
+        height: 100%;
+    }
+
+    .services-container{
+        padding: 0 15%;
+        flex-flow: column;
+    }
+    .service-card{
+        width: 100%;
+        margin: 7.5% auto;
+    }
+    .service-card img{
+        width: 30%;
+    }
+
+    .card-review img{
+        display: none;
+    }
+    .card-review p{
+        margin: 5%;
+        text-align: center;
+    }
+    .card-client{
+        flex-flow: column;
+    }
+    .client-img{
+        margin-top: 5%;
+    }
+
+    .twitter-container{
+        flex-flow: column;
+        height: unset;
+    }
+    .twitter-copy{
+        width: 100%;
+        padding: 5%;
+        align-items: center;
+        justify-content: center;
+    }
+    .twitter-copy h2, .twitter-copy p, .twitter-copy .twitter-contents{
+        align-self: center;
+    }
+    .tweet-category{
+        justify-content: center;
+    }
+    .tweet-embed{
+        display: none;    
+    }
+
+    .contact-container{
+        flex-flow: column;
+        justify-content: unset;
+        height: unset;
+    }
+    .contact-method{
+        width: 80%;
+        padding: 5% 0;
+        height: unset;
+        margin: 0;
+        justify-content: center;
+    }
+
+    #method-email{
+        align-self: center;
+        text-align: center;
+    }
+    #method-whatsapp{
+        align-self: center;
+        text-align: center;
+    }
+    
+    .contact-method p{
+        margin-bottom: 0;
+    }
+    .contact-method a{
+        width: 70%;
+        padding: 2% 10%;
+    }
 }
