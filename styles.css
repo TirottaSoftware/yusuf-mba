@@ -278,6 +278,7 @@ section{
     height: 300px;
     margin: 5% 1%;
     border-radius: 15px;
+    
 }
 .companies-container .company-name{
     text-align: center;
@@ -611,6 +612,10 @@ section{
         font-size: 0.8rem;
         padding: 5% 0;
     }
+    nav ul li{
+        margin: 0 2%;
+        font-size: 0.75rem;
+    }
     section{
         padding: 50% 0;
     }
@@ -642,7 +647,7 @@ section{
     }
 
     .about-container{
-        height: 100%;
+        height: unset;
         flex-flow: column;
     }
     .about-text{
@@ -761,9 +766,9 @@ section{
     }
     .contact-container .contact-card{
         margin: 2.5% 0;
-        width: 75%;
+        width: 85%;
     }
     .contact-container .contact-card .contact-cta {
-        width: 90%;
+        width: 100%;
     }
 }
