@@ -51,8 +51,10 @@ nav{
     align-items: center;
     justify-content: center;
     position: absolute;
+    z-index: 3;
     top: 0;
     left: 0;
+    box-shadow: 10px 0px 10px 10px var(--color-primary);
 }
 nav:hover{
     transition: .5s ease-in-out;
@@ -90,20 +92,20 @@ section{
 .hero{
     width: 100%;
     height: 100%;
-    background-color: var(--color-secondary);
+    background-color: #444455;
     display: flex;
+    position: relative;
     justify-content: space-between;
-    padding: 10% 15% 0 15%;
 }
 .hero-text{
     padding: 5% 0;
     width: 50%;
+    margin: 10%;
 }
 .hero-text h1{
     font-size: 60px;
 }
 .hero-text p{
-    width: 80%;
     margin: 3% 0 10% 0; 
     font-size: 24px;
 }
@@ -121,21 +123,26 @@ section{
     border: 1px solid var(--color-accent);
     text-decoration: underline;
 }
-.hero-img{
+.img-wrapper{
+    position: absolute;
+    right: 10%;
+    top: 15%;
+    width: 35%;
+}
+.img-wrapper img{
     /* background-image: url('./assets/hero-placeholder.jpg');
     background-size: cover;
     background-position: center; */
-    width: 35%;
-    height: 80%;
+    width: 80%;
+    margin: 10%;
     border: 15px solid var(--color-accent);
-}
-.hero-img img{
-    width: 100%;
-    height: 100%;
 }
 
 /* About Section */
 
+#about{
+    padding-bottom: 0;
+}
 .about-container{
     height: 100%;
     width: 100%;
@@ -166,6 +173,9 @@ section{
 
 /* Services Section */
 
+#services{
+    padding: 0;
+}
 .services-container{
     display: flex;
     padding: 0 20%;
@@ -175,16 +185,32 @@ section{
     align-items: center;
 }
 .service-card{
-    width: 50%;
-    margin: 7.5% 0;
+    width: 21%;
+    height: 200px;
+    background: var(--color-secondary);
+    box-shadow: 0px 0px 10px 0px #646464;
+    border-radius: 25px;
+    margin: 2%;
+    padding: 0 1%;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
-.service-card img{
-    width: 20%;
-    margin-bottom: 5%;
+.service-card:hover span{
+    color: var(--color-primary);
+}
+.service-card:hover{
+    transition: .25s ease-in-out;
+    transform: scale(1.1);
+    background: var(--color-accent);
+    color: var(--color-primary);
+}
+.service-card ion-icon{
+    width: 50px;
+    height: 50px;
+    margin: 5% 0;
 }
 
 /* Engagement Process Section */
@@ -203,6 +229,9 @@ section{
 
 /* Pitch Deck Section */
 
+#pitch-deck{
+    background: var(--color-secondary);
+}
 .pitch-deck-container{
     width: 80%;
     margin: 0 auto;
@@ -212,6 +241,7 @@ section{
     justify-content: center;
 }
 .pitch-deck-card{
+    background: var(--color-primary);
     width: 500px;
     margin: 2.5%;
     text-align: center;
@@ -227,8 +257,44 @@ section{
     width: 80%;
     margin: 0 auto;
 }
-.pitch-deck-card i{
+.pitch-deck-icon{
+    width: 75px;
+    height: 75px;
+    margin-top: 25px;
+    color: var(--color-accent);
+}
 
+/* Companies Section */
+
+.companies-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10%;
+}
+.companies-container .company-card{
+    width: 300px;
+    height: 300px;
+    margin: 5% 1%;
+    border-radius: 15px;
+}
+.companies-container .company-name{
+    text-align: center;
+    margin: 2.5% 0;
+    text-transform: uppercase;
+    font-family: var(--font-primary);
+}
+.company-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: white;
+    padding: 5%;
+}
+#img-slush{
+    padding: 0;
+    background: var(--color-primary)
 }
 
 /* Testimonials Section */
@@ -474,18 +540,24 @@ section{
         padding-top: 25%;
         height: unset;
     }
-    .hero-img{
-        width: 80%;
-        margin: 10% auto;
+    .img-wrapper{
+        position: relative;
+        width: 60%;
+        right: 0;
+        margin: 0 auto;
+    }
+    .img-wrapper img{
+        width: 100%;
+        margin: 0;
     }
     .hero-text{
+        margin: 10% 0;
         width: 100%;
         text-align: center;
-        margin-bottom: 10%;
     }
     .hero-text p{
-        width: 100%;
-        margin: 10% 0;
+        width: 90%;
+        margin: 10% auto;
     }
 
     .about-container{
@@ -517,7 +589,17 @@ section{
         background: url('./engagement-process-diagram-mobile.png');
         background-repeat: no-repeat;
         background-position: center;
-        transform: scale(1.1);
+    }
+
+    .pitch-deck-card{
+        margin: 10% 0;
+    }
+
+    .companies-container{
+        justify-content: center;
+    }
+    .companies-container .company-card{
+        margin: 10% 1%;
     }
 
     .testimonials-container{
@@ -555,6 +637,7 @@ section{
     }
     .twitter-copy h2, .twitter-copy p, .twitter-copy .twitter-contents{
         align-self: center;
+        text-align: center;
     }
     .tweet-category{
         justify-content: center;
