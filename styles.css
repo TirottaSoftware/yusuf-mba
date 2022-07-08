@@ -509,6 +509,7 @@ section{
     align-items: center;
     justify-content: center;
     margin: 10% 0;
+    height: 65px;
     width: 85%;
     padding: 2% 7.5%;
     border-radius: 10px;
@@ -521,6 +522,86 @@ section{
     text-transform: uppercase;
     cursor: pointer;
     white-space: nowrap;
+}
+
+/* Contact Section #2 */
+
+.contact-container{
+    font-family: var(--font-primary);
+    padding-bottom: 5%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+}
+
+.contact-container .contact-card{
+    width: 30%;
+    height: 300px;
+    margin: 1% auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-container .contact-card h3{
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+    text-transform: uppercase;
+}
+.contact-container .contact-card p{
+    text-align: center;
+    width: 80%;
+    margin-bottom: 10%;
+}
+.contact-container .contact-card .contact-cta{
+    border: 1px solid var(--color-accent);
+    padding: 20px 50px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    font-weight: bold;
+}
+.contact-container .contact-card .contact-cta:hover{
+    transition: all 0.25s ease-in-out;
+    background: var(--color-accent);
+    color: var(--color-primary);
+}
+.icon-contact{
+    width: 100px;
+    height: 100px;
+    margin: 5% 0;
+}
+#icon-contact-email{
+    color: white;
+}
+#icon-contact-twitter{
+    color: var(--color-twitter);
+}
+#icon-contact-whatsapp{
+    color: #25D366;
+}
+
+.btn-backtotop{
+    width: 20px;
+    height: 20px;
+    background: var(--color-accent);
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    cursor: pointer;
+    z-index: 99;
+    display: none;
+}
+.btn-visible{
+    display: block;
 }
 
 /* Mobile View */
@@ -573,6 +654,9 @@ section{
         height: 100%;
     }
 
+    #services{
+        padding-top: 12.5%;
+    }
     .services-container{
         padding: 0 15%;
         flex-flow: column;
@@ -580,9 +664,6 @@ section{
     .service-card{
         width: 100%;
         margin: 7.5% auto;
-    }
-    .service-card img{
-        width: 30%;
     }
 
     .img-container{
@@ -674,5 +755,15 @@ section{
     .contact-method a{
         width: 70%;
         padding: 2% 10%;
+    }
+    .contact-container{
+        flex-flow: column;
+    }
+    .contact-container .contact-card{
+        margin: 2.5% 0;
+        width: 75%;
+    }
+    .contact-container .contact-card .contact-cta {
+        width: 90%;
     }
 }
