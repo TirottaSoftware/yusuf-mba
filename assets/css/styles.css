@@ -91,7 +91,6 @@ section{
 }
 .hero{
     width: 100%;
-    height: 100%;
     background-color: #444455;
     display: flex;
     position: relative;
@@ -222,7 +221,7 @@ section{
     width: 100%;
     height: 100%;
     margin-top: 2.5%;
-    background-image: url('./engagement-process-diagram.png');
+    background-image: url('../img/engagement-process-diagram.png');
     background-size: cover;
     background-position: center;
 }
@@ -342,7 +341,7 @@ section{
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    background: url('./assets/avatar-placeholder.jpg');
+    background: url('../img/avatar-placeholder.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -453,80 +452,6 @@ section{
 
 /* Contact Section */
 
-#contact{
-    padding-bottom: 0;
-}
-.contact-container{
-    background: rgba(0,0,0,0.1);
-    width: 100%;
-    padding: 0 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 60%;
-}
-.contact-method{
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    width: 25%;
-    height: 50%;
-}
-
-#method-email{
-    align-self: flex-start;
-    text-align: start;
-}
-#method-email i{
-    color: black;
-}
-#method-twitter{
-    align-self: center;
-    text-align: center;
-}
-#method-whatsapp{
-    align-self: flex-end;
-    text-align: end;
-}
-
-.btn-email{
-    background-color: rgb(255,255,255);
-}
-.btn-email label{
-    color: black;
-}
-.btn-twitter{
-    background-color: var(--color-twitter);
-}
-.btn-whatsapp{
-    background-color: var(--color-whatsapp);
-}
-
-.contact-method p{
-    font-size: 1.25rem;
-}
-.contact-method a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10% 0;
-    height: 65px;
-    width: 85%;
-    padding: 2% 7.5%;
-    border-radius: 10px;
-}
-.contact-method i{
-    padding: 20px;
-}
-.contact-method label{
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-/* Contact Section #2 */
-
 .contact-container{
     font-family: var(--font-primary);
     padding-bottom: 5%;
@@ -535,12 +460,10 @@ section{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    flex-flow: row;
 }
 
 .contact-container .contact-card{
     width: 30%;
-    height: 300px;
     margin: 1% auto;
     display: flex;
     flex-flow: column;
@@ -605,170 +528,3 @@ section{
     display: block;
 }
 
-/* Mobile View */
-
-@media screen and (max-width: 678px) {
-    nav{
-        font-size: 0.8rem;
-        padding: 5% 0;
-    }
-    nav ul li{
-        margin: 0 2%;
-        font-size: 0.75rem;
-    }
-    section{
-        padding: 50% 0;
-    }
-    
-    .hero{
-        flex-flow: column-reverse;
-        margin-top: 10%;
-        padding-top: 25%;
-        height: unset;
-    }
-    .img-wrapper{
-        position: relative;
-        width: 60%;
-        right: 0;
-        margin: 0 auto;
-    }
-    .img-wrapper img{
-        width: 100%;
-        margin: 0;
-    }
-    .hero-text{
-        margin: 10% 0;
-        width: 100%;
-        text-align: center;
-    }
-    .hero-text p{
-        width: 90%;
-        margin: 10% auto;
-    }
-
-    .about-container{
-        height: unset;
-        flex-flow: column;
-    }
-    .about-text{
-        width: 100%;
-    } 
-    .about-img{
-        width: 80%;
-        margin: 10% auto;
-        height: 100%;
-    }
-
-    #services{
-        padding-top: 12.5%;
-    }
-    .services-container{
-        padding: 0 15%;
-        flex-flow: column;
-    }
-    .service-card{
-        width: 100%;
-        margin: 7.5% auto;
-    }
-
-    .img-container{
-        background: url('./engagement-process-diagram-mobile.png');
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .pitch-deck-card{
-        margin: 10% 0;
-    }
-
-    .companies-container{
-        justify-content: center;
-    }
-    .companies-container .company-card{
-        margin: 10% 1%;
-    }
-
-    .testimonials-container{
-        padding: 0 5%;
-    }
-    .card-review{
-        padding: 0;
-    }
-    .card-review img{
-        display: none;
-    }
-    .card-review p{
-        margin: 5%;
-        text-align: center;
-    }
-    .card-client{
-        flex-flow: column;
-    }
-    .client-img{
-        margin-top: 5%;
-    }
-    .client-info{
-        text-align: center;
-    }
-
-    .twitter-container{
-        flex-flow: column;
-        height: unset;
-    }
-    .twitter-copy{
-        width: 100%;
-        padding: 5%;
-        align-items: center;
-        justify-content: center;
-    }
-    .twitter-copy h2, .twitter-copy p, .twitter-copy .twitter-contents{
-        align-self: center;
-        text-align: center;
-    }
-    .tweet-category{
-        justify-content: center;
-    }
-    .tweet-embed{
-        display: none;    
-    }
-
-    .contact-container{
-        flex-flow: column;
-        justify-content: unset;
-        height: unset;
-    }
-    .contact-method{
-        width: 80%;
-        padding: 5% 0;
-        height: unset;
-        margin: 0;
-        justify-content: center;
-    }
-
-    #method-email{
-        align-self: center;
-        text-align: center;
-    }
-    #method-whatsapp{
-        align-self: center;
-        text-align: center;
-    }
-    
-    .contact-method p{
-        margin-bottom: 0;
-    }
-    .contact-method a{
-        width: 70%;
-        padding: 2% 10%;
-    }
-    .contact-container{
-        flex-flow: column;
-    }
-    .contact-container .contact-card{
-        margin: 2.5% 0;
-        width: 85%;
-    }
-    .contact-container .contact-card .contact-cta {
-        width: 100%;
-    }
-}
