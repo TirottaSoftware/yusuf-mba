@@ -35,7 +35,7 @@
         width: 100%;
     }
 }
-@media screen and (min-width: 1200px) and (max-width: 1366px) {
+@media screen and (min-width: 1201px) and (max-width: 1366px) {
     .hero{
         height: unset;
     }
@@ -118,11 +118,22 @@
     .service-card{
         width: 200px;
     }
-    .img-container{
+    
+    .img-container .img-ep-desktop{
+        display: none;
+    }
+    .img-container .img-ep-mobile{
+        width: 50%;
+        margin: 0 auto;
+        height: auto;
+        display: block;
+    }
+
+    /* .img-container{
         background-size: contain;
         background-repeat: no-repeat;
         transform: scale(1.3);
-    }
+    } */
     .pitch-deck-card{
         width: 350px;
         height: 300px;
@@ -221,12 +232,22 @@
         font-size: .75rem;
     }
 
-    .img-container{
+    .img-container .img-ep-desktop{
+        display: none;
+    }
+    .img-container .img-ep-mobile{
+        width: 55%;
+        margin: 0 auto;
+        height: auto;
+        display: block;
+    }
+
+    /* .img-container{
         background: url('../img/engagement-process-diagram-mobile.png');
         background-repeat: no-repeat;
         background-position: center;
         transform: scale(1.25);
-    }
+    } */
 
     .companies-container .company-card{
         width: 250px;
@@ -269,6 +290,18 @@
     }
     .contact-container .contact-card .contact-cta {
         width: 95%;
+    }
+}
+
+@media screen and (min-width: 678px) and (max-width: 767px) {
+    .img-container .img-ep-desktop{
+        display: none;
+    }
+    .img-container .img-ep-mobile{
+        width: 70%;
+        margin: 0 auto;
+        height: auto;
+        display: block;
     }
 }
 
@@ -335,11 +368,19 @@
         margin: 7.5% auto;
     }
 
-    .img-container{
+    .img-container .img-ep-desktop{
+        display: none;
+    }
+    .img-container .img-ep-mobile{
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+    /* .img-container{
         background: url('../img/engagement-process-diagram-mobile.png');
         background-repeat: no-repeat;
         background-position: center;
-    }
+    } */
 
     .pitch-deck-card{
         margin: 10% 0;
