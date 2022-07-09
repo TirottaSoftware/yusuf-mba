@@ -429,6 +429,11 @@ section{
     justify-content: center;
     align-items: center;
 }
+.icon-twitter{
+    width: 35px;
+    height: 35px;
+    margin: 2%;
+}
 .twitter-follow label{
     cursor: pointer;
     white-space: nowrap;
